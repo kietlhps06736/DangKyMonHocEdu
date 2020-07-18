@@ -1,0 +1,134 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".GiaoDien.SettingActivity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/login_bk_color"
+    android:focusableInTouchMode="true"
+    android:gravity="center"
+    android:layout_gravity="center">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_centerInParent="true"
+        android:paddingTop="20dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+        <TextView
+            android:layout_marginLeft="30dp"
+
+            style="@style/viewParent.headerText"
+            android:text="Cài Đặt" />
+
+        <RelativeLayout
+            android:layout_width="353dp"
+            android:layout_height="108dp"
+            android:layout_marginTop="20dp">
+
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/ImgUser"
+                android:layout_width="97dp"
+                android:layout_height="match_parent"
+
+                android:layout_marginRight="10dp"
+                android:src="@drawable/ic_avatar"
+                app:civ_border_color="@color/imageBorderColor"
+                app:civ_border_width="2dp" />
+            <TextView
+                android:id="@+id/tvTen"
+                style="@style/viewParent.headerText1"
+                android:layout_marginTop="20dp"
+                android:layout_toRightOf="@id/ImgUser"
+                android:hint="Họ Và Tên"
+                android:textSize="25sp" />
+
+            <TextView
+                android:id="@+id/tvMSSV"
+                style="@style/viewParent.headerText1"
+                android:layout_below="@id/tvTen"
+                android:layout_toRightOf="@id/ImgUser"
+                android:hint="MSSV"
+                android:textColor="#5D5C5C"
+                android:textSize="15sp" />
+
+        </RelativeLayout>
+
+        <TextView
+            style="@style/viewParent.headerText.settingsMiniTitle"
+            android:text="Tài Khoản"/>
+
+        <TextView
+            android:id="@+id/tvUser"
+            style="@style/viewParent.headerText.settingsTextIcon"
+            android:drawableLeft="@drawable/ic_edit_profile"
+            android:text="Thông Tin Cá Nhân" />
+
+        <TextView
+            android:id="@+id/tvEditPassword"
+            style="@style/viewParent.headerText.settingsTextIcon"
+            android:drawableLeft="@drawable/ic_edit_password"
+            android:layout_marginTop="10dp"
+            android:text="Đổi Mật Khẩu" />
+
+        <TextView
+            style="@style/viewParent.headerText.settingsMiniTitle"
+            android:text="Thông Báo"/>
+
+        <Switch
+            style="@style/settingsText"
+            android:checked="false"
+            android:drawableLeft="@drawable/ic_notifications"
+            android:text="Thông Báo" />
+
+        <TextView
+            style="@style/viewParent.headerText.settingsMiniTitle"
+            android:text="khác"/>
+
+        <TextView
+            android:id="@+id/tvLanguage"
+            style="@style/viewParent.headerText.settingsTextIcon"
+            android:drawableLeft="@drawable/ic_languages"
+            android:text="Ngôn Ngữ" />
+
+        <TextView
+            android:id="@+id/tvThoat"
+            style="@style/viewParent.headerText.settingsTextIcon"
+            android:drawableLeft="@drawable/ic_logout"
+            android:text="Đăng Xuất" />
+
+
+        <TextView
+            style="@style/viewParent.headerText.settingsMiniTitle"
+            android:text="App ver 1.0.0"
+            android:textAlignment="center"/>
+
+
+
+</LinearLayout>
+    </ScrollView>
+    <View
+        android:layout_marginTop="20dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_width="11dp"
+        android:layout_height="match_parent"
+        android:background="@drawable/ic_side_bg"/>
+    <ImageView
+        android:id="@+id/img_back_dk"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="11dp"
+        android:layout_marginBottom="30dp"
+        android:adjustViewBounds="false"
+        android:src="@drawable/ic_back_img" />
+</RelativeLayout>

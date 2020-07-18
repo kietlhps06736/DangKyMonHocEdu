@@ -1,0 +1,104 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:id="@+id/fragment"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:padding="10dp"
+    android:layout_marginTop="15dp">
+
+    <LinearLayout
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+    <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_marginLeft="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Mã Môn Học:"
+                android:textSize="16sp"
+
+                android:textStyle="bold" />
+            <TextView
+                android:textColor="@color/balck1"
+                android:id="@+id/tvMaMonHoc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Mã Môn Học "
+                android:textSize="16sp"
+                android:layout_marginLeft="5dp"
+                />
+    </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_marginLeft="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Môn Học:"
+                android:textSize="16sp"
+
+                android:textStyle="bold" />
+            <TextView
+                android:textColor="@color/balck1"
+                android:id="@+id/tvMonHoc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Môn Hoc"
+                android:textSize="16sp"
+                android:layout_marginLeft="5dp"
+                />
+        </LinearLayout>
+        <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+            <TextView
+                android:layout_marginLeft="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Lớp Học:"
+                android:textSize="16sp"
+
+                android:textStyle="bold" />
+            <TextView
+                android:textColor="@color/balck1"
+                android:id="@+id/tvLopHoc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Lớp Học"
+                android:textSize="16sp"
+                android:layout_marginLeft="5dp"
+                />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:background="@drawable/radius"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:orientation="vertical"
+        android:layout_margin="5dp"
+        android:gravity="center"
+android:id="@+id/layout"
+        >
+        <TextView
+            android:id="@+id/tvXacNhan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Chờ duyệt"
+            android:textSize="17sp"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textColor="#ffffff"
+            />
+    </LinearLayout>
+    </LinearLayout>

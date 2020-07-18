@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".GiaoDien.HomeActivity"
+    tools:showIn="@layout/activity_home"
+    style="@style/parent.contentLayout">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="72dp">
+
+                <TextView
+                    android:id="@+id/tv_name"
+                    android:layout_marginLeft="10dp"
+                    style="@style/viewParent.headerText"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerVertical="true"
+                    android:maxLines="2"
+                    android:hint="Họ Và Tên" />
+                <TextView
+
+                    android:id="@+id/tv_mssv"
+                    android:layout_marginLeft="20dp"
+                   android:layout_marginTop="30dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Mã Số Sinh Viên"
+                    style="@style/viewParent.headerText"
+                    android:textSize="20sp"/>
+
+
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/img_avatar"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="0dp"
+                    android:src="@drawable/ic_avatar"
+                    app:civ_border_color="@color/imageBorderColor"
+                    app:civ_border_width="2dp" />
+
+
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:layout_toLeftOf="@id/img_avatar"
+                    android:src="@drawable/thongbao" />
+            </RelativeLayout>
+
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    app:cardCornerRadius="16dp"
+                    app:cardPreventCornerOverlap="false"
+                    app:cardBackgroundColor="@color/designMainColor"
+                    android:minHeight="200dp"
+                    android:layout_alignParentTop="true">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="center_vertical">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:padding="10dp"
+                            android:orientation="vertical"
+                            android:layout_weight="1">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Đăng Ký \n   Môn Học"
+                                android:textColor="@color/whiteBodyColor"
+                                android:textSize="25sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:layout_width="175dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="15dp"
+                                android:text="Version 1.0.0"
+                                android:textColor="@color/whiteBodyColor"
+                                android:textSize="13sp"
+                                android:textStyle="bold" />
+
+                        </LinearLayout>
+                        <ImageView
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:adjustViewBounds="true"
+                            android:cropToPadding="true"
+                            android:src="@drawable/ic_login_hero"
+                            android:elevation="44dp"/>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp">
+
+                <TextView
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentLeft="true"
+                    android:text="Trang Chủ"
+                    style="@style/viewParent.headerText"/>
+
+                <TextView
+                    android:layout_alignParentRight="true"
+                    style="@style/viewParent"
+                    android:text="Tất Cả"
+                    android:layout_centerVertical="true"
+                    android:textSize="@dimen/headerMoreTextSize"
+                    android:textColor="@color/primaryTextColor"
+                    android:textStyle="bold"/>
+
+            </RelativeLayout>
+
+            <!--remove the below layout with recycler view, use card poplar courses as model for design-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <include layout="@layout/card_danhsach" />
+                <include layout="@layout/card_trangthai" />
+                <include layout="@layout/card_lichhoc" />
+
+            </LinearLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp">
+
+                <TextView
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentLeft="true"
+                    android:text="Khác"
+                    style="@style/viewParent.headerText"/>
+
+                <TextView
+                    android:layout_alignParentRight="true"
+                    style="@style/viewParent"
+                    android:text="Tất Cả"
+                    android:layout_centerVertical="true"
+                    android:textSize="@dimen/headerMoreTextSize"
+                    android:textColor="@color/primaryTextColor"
+                    android:textStyle="bold"/>
+
+            </RelativeLayout>
+
+            <!--remove the below layout with recycler view, use card poplar courses as model for design-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="20dp">
+
+                <include layout="@layout/card_caidat" />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">DangKyMonHoc</string>
+
+    //login
+    <string name="reset_email_hint">Email</string>
+    <string name="monhoc_hint">Môn Học</string>
+    <string name="lophoc_hint">Lớp Học</string>
+    <string name="giangvien_hint">Giảng Viên</string>
+    <string name="cahoc_hint">Ca Học</string>
+    <string name="login_email_hint">Username</string>
+    <string name="login_password_hint">Password</string>
+</resources>

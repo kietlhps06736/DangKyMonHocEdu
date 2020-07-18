@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorAccent">#03DAC5</color>
+
+
+    //login
+    <color name="darkTextColor">#020000</color>
+    <!--colors for light mode-->
+<!--    <color name="contentTextColor">#020000</color>-->
+    <color name="register_bk_color">#11CFC5</color>
+    <color name="login_bk_color">#fff</color>
+<!--    <color name="whiteTextColor">#fff</color>-->
+<!--    <color name="primaryTextColor">#11CFC5</color>-->
+    //Fragment
+    <color name="colorTab">#05FAFA</color>
+    <color name="colorOne">#FFFFFF</color>
+    <color name="colorTwo">#FF9800</color>
+    <color name="background">#A6D2FF</color>
+<!--    <color name="contentBodyColor">#FCFCFC</color>-->
+    <color name="balck">#A6000000</color>
+    <color name="balck1">#000000</color>
+    <color name="white">#DFDFDF</color>
+
+    //user
+    <color name="background1">#edf3f9</color>
+    <color name="address">#2F7092</color>
+    <color name="followers">#0D5D98</color>
+    <color name="headings">#000000</color>
+    <color name="solidCircle">#AAFFFFFF</color>
+    <color name="circleBorder">#FF7F50</color>
+    <color name="gradEnd">#ffffff</color>
+    <color name="gradStart">#FF6347</color>
+    <color name="followersBg">#65DCE5</color>
+    <color name="followingBg">#49BEFF</color>
+    <color name="grey">#E5E5E5</color>
+    <color name="black">#000000</color>
+    <color name="white1">#FFFFFF</color>
+
+    <!--colors for light mode-->
+<!--    <color name="contentBodyColor1">#FCFCFC</color>-->
+<!--    <color name="contentTextColor1">#020000</color>-->
+<!--    <color name="imageBorderColor">#E01E7A</color>-->
+<!--    <color name="miniTitle">#2A2E43</color>-->
+
+    //hoem
+    <color name="bottomNavigationTextColor">#B2B2B2</color>
+    <color name="bottomNavigationTintColor">#B2B2B2</color>
+    <color name="bottomNavigationSelectedColor">#13D3B4</color>
+    <color name="statusBarColor">#000</color>
+    <color name="whiteBodyColor">#FCFCFC</color>
+<!--    <color name="darkTextColor">#020000</color>-->
+    <color name="primaryTextColor">#13D3B4</color>
+    <color name="whiteTextColor">#fff</color>
+    <color name="frutorial_title">#4c4c4c</color>
+    <color name="designMainColor">#13D3B4</color>
+    <color name="imageBorderColor">#13D3B4</color>
+    <color name="contentStatusBar">#fff</color>
+    <color name="contentBodyColor">#FCFCFC</color>
+    <color name="contentTextColor">#020000</color>
+    <color name="bottomNavigationBackground">#F7F7F7</color>
+    <color name="miniTitle">#0F0101</color>
+    <color name="miniDescription">#707070</color>
+
+
+
+</resources>

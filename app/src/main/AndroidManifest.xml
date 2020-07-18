@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.dangkymonhoc">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".GiaoDien.ResetPassActivity"></activity>
+        <activity android:name=".GiaoDien.UserActivity" />
+        <activity android:name=".GiaoDien.EditPassActivity" />
+        <activity android:name=".GiaoDien.LanguageActivity" />
+        <activity android:name=".GiaoDien.SettingActivity" />
+        <activity android:name=".GiaoDien.TrangThaiActivity" />
+        <activity android:name=".GiaoDien.HomeActivity" />
+        <activity android:name=".GiaoDien.LoginActivity" />
+        <activity android:name=".GiaoDienDangKy.FormDangKyActivity" />
+        <activity android:name=".GiaoDienDangKy.LopHocActivity" />
+        <activity android:name=".GiaoDienDangKy.MonHocActivity" />
+        <activity android:name=".GiaoDienDangKy.NganhHocActivity" />
+        <activity android:name=".GiaoDien.ProfileActivity" />
+        <activity android:name=".GiaoDien.LichHocActivity" />
+        <activity android:name=".GiaoDien.MonCuaToiActivity" />
+        <activity android:name=".GiaoDien.ThongTinThemActivity" />
+        <activity android:name=".GiaoDien.SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".MainActivity" />
+    </application>
+
+</manifest>
